@@ -10,29 +10,39 @@
 	    width: 100%;
 	    height: 100%;
 	}
+	div {
+	    padding: 20px;
+	    text-align: center;
+        font-family: Courier;
+        font-size: 12px;
+	}
 	.example-box {
-	    width: 640px;
-	    height: 480px;
+	    width: 600px;
+	    height: 440px;
 	    background-color: #ff0000;
 	}
     .example-box2 {
-        width: 320px;
-        height: 240px;
+        width: 280px;
+        height: 200px;
         background-color: #0000ff;
     }
 	</style>
 </head>
 
 <body>
-    <div class="example-box"></div>
-    <div class="example-box2"></div>
+    <div class="example-box">
+        $('.example-box').jCenter();
+    </div>
+    <div class="example-box2">
+        $('.example-box2').jCenter(50, 75);
+    </div>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="jcenter.jquery.js"></script>
     <script>
     $(document).ready(function(){
         $('.example-box').jCenter();
-        $('.example-box2').jCenter(20, 40);
+        $('.example-box2').jCenter(50, 75);
     });
     </script>
 </body>
