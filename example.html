@@ -15,16 +15,24 @@
 	    height: 480px;
 	    background-color: #ff0000;
 	}
+    .example-box2 {
+        width: 320px;
+        height: 240px;
+        background-color: #0000ff;
+    }
 	</style>
 </head>
 
 <body>
     <div class="example-box"></div>
+    <div class="example-box2"></div>
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="jcenter.jquery.js"></script>
     <script>
     $(document).ready(function(){
-        $('.example-box').jCenter(50, 50);
+        $('.example-box').jCenter();
+        $('.example-box2').jCenter(20, 40);
     });
     </script>
 </body>
