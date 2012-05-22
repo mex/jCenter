@@ -27,8 +27,8 @@
                 'position': 'absolute',
                 'top': top+'%',
                 'left': left+'%',
-                'margin-top': ($(this).height()*-(top/100))+'px',
-                'margin-left': ($(this).width()*-(left/100))+'px'
+                'margin-top': ($(this).outerHeight()*-(top/100))+'px',
+                'margin-left': ($(this).outerWidth()*-(left/100))+'px'
             });
         });
     };
